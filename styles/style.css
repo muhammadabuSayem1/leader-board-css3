@@ -1,0 +1,135 @@
+/* common styles or utilities*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f1ff;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.container{
+    background-color: white;
+    width: 87%;
+    padding: 30px; ;
+    width: 870px;
+    margin-top: 20px;
+    border-radius: 5px;
+    
+}
+/* top players style */
+.top-players{
+   margin-bottom: 30px;
+}
+.section-title{
+     color: blue; 
+     font-size: 24px;
+     margin-top:30px;
+     
+}
+.players{
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 40px;
+    
+}
+.player{
+    display:flex;
+    align-items: center;
+    
+}
+.player img{
+    height:56px;
+    width: 56px;
+}
+.player-name{
+    margin: 16px;
+    font-size:18 px;
+}
+hr{
+    border: 1px solid #d1d1d1;
+}
+/*--------------
+ top blog styles
+ -------------- */
+ .blogs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 24px;
+}
+.blog  {
+   display:flex
+   
+}
+ img{
+   width: 177px;
+   
+}
+ .blog-info{
+    margin-left: 16px; 
+}
+ .blog-tittle{
+    font-size: 20px;
+}
+ .blog-author {
+    color: #9f9f9f;
+    font-size: 16px;
+}
+.blog-author a{
+    text-decoration: none;
+    font-size: 16px;
+    color: blue;
+}
+
+/* ------------
+courses banner
+ ----------- */
+ 
+ .courses{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 2px;
+ }
+ img{
+    width: 200px;
+}
+.fa-stars{
+    color: rgb(255, 215, 0);
+    font-size: 12px;
+}
+.fild{
+    color: gold;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: space-between;
+}
+.course-duration{
+    padding: 30px;
+    /* background-color: palevioletred;
+    height: 30px; */
+}
+/* ------------
+Media Queries
+--------------- */
+
+/*-------------
+ Mobile Devices
+---------------- */
+@media  only screen and (max-width:688px){
+    
+    .container{
+        width: 100%;
+    }
+    .players,.blogs,  .courses{
+        grid-template-columns:  1fr;
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    
+}
